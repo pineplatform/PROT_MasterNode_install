@@ -1,14 +1,14 @@
 #!/bin/bash
 
 
-CONFIG_FILE='blastx.conf'
-CONFIGFOLDER='/root/.blastxcore'
-COIN_DAEMON='/usr/local/bin/blastxd'
-COIN_CLI='/usr/local/bin/blastx-cli'
-COIN_REPO='https://github.com/BlastX-Core/BlastX/releases/download/v1.0.1/blastx-v1.0.1-linux.tar.gz'
+CONFIG_FILE='protcoin.conf'
+CONFIGFOLDER='/root/.protcoincore'
+COIN_DAEMON='/usr/local/bin/protcoind'
+COIN_CLI='/usr/local/bin/protcoin-cli'
+COIN_REPO='https://github.com/pineplatform/PROT_MasterNode_install/prot-v1.0.1-linux.tar.gz'
 
-COIN_NAME='BlastX'
-COIN_PORT=30009
+COIN_NAME='PROT'
+COIN_PORT=30111
 
 NODEIP=$(curl -s4 icanhazip.com)
 
@@ -182,12 +182,14 @@ maxconnections=64
 masternode=1
 externalip=$NODEIP:$COIN_PORT
 masternodeprivkey=$COINKEY
-addnode=107.175.240.128
-addnode=172.245.156.112
-addnode=107.172.150.131
-addnode=142.93.59.36
-addnode=157.230.163.83
-addnode=206.189.185.12    
+addnode=202.182.118.183
+addnode=139.180.137.128
+addnode=139.180.128.151
+addnode=45.77.11.127
+addnode=45.77.239.191
+addnode=207.148.76.228
+addnode=45.32.59.207
+addnode=45.32.38.151
 EOF
 }
 
